@@ -28,6 +28,7 @@ public class MainActivity extends BaseApp implements MainInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         getDeps().inject(this);
 
         list = (RecyclerView) findViewById(R.id.list);
